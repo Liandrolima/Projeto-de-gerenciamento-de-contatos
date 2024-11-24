@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Gerenciamento de Contatos</title>
+    <link rel="stylesheet" href="estilocontatos.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Contatos</h1>
+    </header>
+    <form id="contatoForm" autocomplete="on">
+        <fieldset>
+            <legend><strong>Adicionar Contato</strong></legend>
+            <p>
+                <label for="contatoNome">Nome</label>
+                <input type="text" name="nome" id="contatoNome" minlength="S" maxlength="20" required>
+            </p>
+            <p>
+                <label for="contatoEmail">E-mail</label>
+                <input type="email" name="email" id="contatoEmail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="contatoTelefone">Telefone</label>
+                <input type="tel" name="tel" id="contatoTelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <button type="submit"><strong>Adicionar Contato</strong></button>
+                
+            </p>
+        </fieldset>
+        <!--Alem de pattern="^[0-9]{4}-[0-9]{4}$" pode ser usado \d -->
+        <!--Estudar mais sobre RegEx(expressões regulares)-->        
+    </form>
+    <div id="buscar">
+        <h2>Buscar Contato</h2>
+        <input type="text" id="buscaInput" placeholder="    Digite o nome ou email">
+        <button id="buscarContatoBtn">Buscar</button>
+        <button id="exibirContatosBtn" onclick="window.location.href='contato.html'">Exibir Todos os contatos</button>
+      </div>
+    
+    <ul id="contatoList"></ul>  
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "projeto-de-gerenciamento-de-contatos",
+  "version": "1.0.0",
+  "description": "Aplicação simples que permita aos usuários gerenciar uma lista de contatos. Eles poderão adicionar novos contatos, visualizar a lista existente, editar informações de contatos e excluir contatos desnecessários. Este é um projeto básico que pode ser personalizado e aprimorado com recursos adicionais para proporcionar uma experiência mais completa.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security"
+  }
+}
